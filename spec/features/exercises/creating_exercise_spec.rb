@@ -9,7 +9,7 @@ RSpec.feature "Creating Exercise" do
 	scenario "with valid credentials" do 
 		visit "/"
 
-		click_link "My Longue"
+		click_link "My Lounge"
 		click_link "New Workout"
 		expect(page).to have_link("Back")
 
