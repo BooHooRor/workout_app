@@ -18,7 +18,7 @@ RSpec.feature "Creating Exercise" do
 		fill_in "Activity date", with: "2016-07-26"
 		click_button "Create Exercise"
 
-		expect(page).to have_content("Exerice has been created")
+		expect(page).to have_content("Exercise has been created")
 
 		exercise = Exercise.last 
 		expect(current_path).to eq(user_exercise_path(@john, exercise))
