@@ -1,6 +1,6 @@
 require "rails_helper"
 
-Rspec.feature "Editing Exercise" do 
+RSpec.feature "Editing Exercise" do 
 	before do
 		@owner = User.create!(email: "owner@example.com", password: "password")
 
@@ -23,7 +23,7 @@ Rspec.feature "Editing Exercise" do
 		fill_in "Duration", with: 45
 		click_button "Update Exercise"
 
-		expect(page).to have_content("Ecercise has been updated")
+		expect(page).to have_content("Exercise has been updated")
 		expect(page).to have_content(45)
 		expect(page).not_to have_content(48)
 	end
