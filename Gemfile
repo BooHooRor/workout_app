@@ -35,6 +35,7 @@ gem 'devise'
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
 gem 'd3-rails','4.1.0'
+gem 'will_paginate-bootstrap'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
